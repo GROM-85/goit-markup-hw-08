@@ -1,0 +1,34 @@
+.social-net{
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: #AFB1B8;
+        @include transition(color);
+        @include transition(background-color);  
+        
+        &:hover,&:focus{
+            color: $white-text-color;
+            background-color: $accent-color;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+
+    }
+
+}

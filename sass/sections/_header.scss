@@ -1,0 +1,19 @@
+.header{
+    background-color: $white-bcg-color;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+
+
+
+
+

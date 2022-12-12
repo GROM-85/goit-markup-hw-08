@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+}
+
+/* set by default in modern-normalize styles */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* all vars in root is available within this doc */
+/* could be set localy inside each class */
+// :root {
+//     --primary-text-color: #212121;
+//     --accent-color: #2196f3;
+//     --sec-text-color: #757575;
+//     --bcg-white-color: #fff;
+// }
+
+body {
+    font-family: Roboto, sans-serif;
+    color: $primary-text-color;
+    background-color:$white-bcg-color;
+    
+    &.modal-open {
+            overflow: hidden;
+        }
+    
+    &.no-scroll {
+        overflow: hidden;
+    }
+   
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: block
+}
+
+
+.hidden-title {
+    opacity: 0;
+    position: absolute;
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+
+.container { 
+          
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;     
+
+    
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+
+}
+
+.section {
+
+    padding:60px 0;
+    
+    @media screen and (min-width:1200px){
+        padding:94px 0;
+        
+    }
+
+
+
+}

@@ -1,0 +1,44 @@
+.logo{
+    font-family:$secondary-font;
+    @include font( 700, 24px, $primary-text-color, 1.17, 0.03em);
+
+    &__span{
+        font-family:$secondary-font;
+        @include font(700,24px,$accent-color,1.17,0.03em);
+    }
+
+    @media screen and (min-width: 1200px){
+        font-family: $secondary-font;
+        @include font(700, 26px, $primary-text-color, 1.38, 0.03em);
+    
+        &__span {
+            font-family: $secondary-font;
+            @include font(700, 26px, $accent-color, 1.19, 0.03em);
+        }
+        
+    }  
+  
+}
+
+.footer__logo{
+
+    font-family: $secondary-font;
+        @include font(700, 24px, $white-text-color, 1.17, 0.03em);
+    
+        &__span {
+            font-family: $secondary-font;
+            @include font(700, 24px, $accent-color, 1.17, 0.03em);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-family: $secondary-font;
+            @include font(700, 26px, $white-text-color, 1.38, 0.03em);
+    
+            &__span {
+                font-family: $secondary-font;
+                @include font(700, 26px, $accent-color, 1.19, 0.03em);
+            }
+    
+        }
+   
+}

@@ -1,0 +1,87 @@
+.hero {
+    
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F303A;
+    background-position: center;    
+   
+    
+    @media screen and (max-width:767px) {
+        max-width: 480px;
+        
+        background-image:
+            linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/index/hero-mob.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/index/hero@2x-mob.jpg);
+
+
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+      
+        background-image:
+            linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/index/hero-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/index/hero@2x-tablet.jpg);
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;
+        
+        background-image:
+            linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/index/hero.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/index/hero@2x.jpg);
+        }
+
+    }  
+
+    
+
+    &__container{
+        padding: 118px 0;
+
+        @media screen and (min-width:1200px) {
+                padding: 200px 0;
+        
+            }
+
+    }    
+
+    &__title{
+        max-width: 360px;
+        margin: 0 auto;  
+        padding-bottom:40px;      
+        text-transform: uppercase;
+        text-align: center;
+        @include font(900, 26px, $white-text-color, 1.6, 0.06em);
+
+        @media screen and (min-width:1200px){
+            padding-bottom:30px;
+            max-width: 696px;
+            @include font(900, 44px, $white-text-color, 1.6, 0.06em);
+        }
+        
+    }
+
+
+}

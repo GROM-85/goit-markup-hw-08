@@ -1,0 +1,28 @@
+.footer{
+    background-color: $footer-bcg-color;
+    padding: 60px 0 60px;
+
+    &__container {
+        
+        display: flex;  
+        justify-content: center;      
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 60px;
+        
+
+        @media screen and (min-width: 768px){                
+                justify-content: space-around;              
+        
+            }
+
+        @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap:0;
+            }
+        
+        
+
+    }
+}

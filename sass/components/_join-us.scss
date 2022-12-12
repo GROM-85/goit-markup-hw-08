@@ -1,0 +1,23 @@
+.join-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+    @media screen and (min-width: 1200px){
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 70px;
+    }
+
+    &__title{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @include font(700, 14px, $white-text-color, 1.14, 0.03em);
+    }
+    & .social-net__link{
+        background:$grey-bcg-color;
+    }
+
+}
+

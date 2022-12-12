@@ -1,0 +1,18 @@
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+.menu-container.is-open {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}/*# sourceMappingURL=menu-container.css.map */

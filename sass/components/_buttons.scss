@@ -1,0 +1,155 @@
+.hero__btn{
+    
+    padding: auto;
+    height: 50px;
+    background-color: $accent-color;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    @include font(700, 16px, $white-text-color, 1.9, 0.06em);
+    @include transition(background-color);
+
+    @media screen and (max-width:1199px) {
+       
+        width:200px;     
+        
+    }
+
+    @media screen and (min-width:1200px) {
+       
+        width: 216px;;
+        
+        
+       
+    }
+
+    &:hover,&:focus{
+        background-color: #117fd8;
+        
+    }
+}
+
+.menu-btn{    
+    z-index: 2;
+
+    &__close{
+        display:none;
+    }
+
+    &.is-open .menu-btn__close{        
+        display:block;
+        
+    }
+
+    &.is-open .menu-btn__open{
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
+
+    &__icon{
+        fill:currentColor;
+        @include transition(fill);        
+           
+    } 
+    
+    
+    @media screen and (min-width:768px){
+        display:none;
+    }
+}
+
+
+.filter__btn{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px 22px;
+    border-radius: 4px; 
+    background-color:$light-grey-bcg-color;
+    color:$primary-text-color;
+    cursor: pointer;
+    text-align: center;
+    @include font(500, 16px, $primary-text-color, 1.62, 0.06em);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+   
+
+    &:hover,&:focus{
+        background-color: $accent-color;
+        color: $white-text-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.close__btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: black;
+    @include transition(color);
+    @include transition(border-color);
+
+    &-icon{
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+    }
+    
+    &:hover,&:focus{
+        color:$accent-color;
+        border: 1px solid $accent-color;
+    }
+}
+
+.submit-btn {
+    margin: 0 auto;
+    padding: 10px 52px;
+    width: 200px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    background-color: $accent-color;
+    color: $white-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @include transition(background-color);
+
+    &:hover,&:focus {
+        background-color: #117fd8;            
+        }
+}
+
+.subscribe__btn{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    padding: 10px 62px 10px 28px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    background-color: $accent-color;
+    color: $white-text-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+    &:hover,&:focus{
+        background-color: #117fd8;
+    }
+}   
+    

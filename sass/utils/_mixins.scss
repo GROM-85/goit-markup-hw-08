@@ -1,0 +1,21 @@
+@mixin font($weight:400, $size:14px, $color:$primary-text-color, $line-height, $letter-spacing: 0.03em){    
+    font-size: $size;
+    font-weight: $weight;
+    font-style: normal;
+    color: $color;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin transition($name:transform){
+    transition: $name 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin flex-basis($gap, $num_items){
+    flex-basis:calc((100% - $gap * ($num_items - 1))/$num_items);
+}
+
+@mixin icon_size($width, $heigth){
+    width:$width;
+    height:$height;
+}
