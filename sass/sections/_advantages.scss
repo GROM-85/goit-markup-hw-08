@@ -8,8 +8,7 @@
 
     &__item{
         display:flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: flex-start;        
         flex-direction: column;        
 
         @media screen and (min-width: 768px){
@@ -36,12 +35,15 @@
     
 
     &__title{
-        margin: 0 0 10px;
-        
+        margin: 0 0 10px;        
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
-        text-align: left;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+                text-align: left;;
+            }
     }
 
     &__text{

@@ -1,3 +1,8 @@
+.portfolio__container{
+    margin:-15px;
+
+}
+
 .filter__list{
 
     display:flex;
@@ -10,25 +15,25 @@
 }
 
 
-
 .card__set{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;    
+    // gap: 30px;
+    
 }
 
 .card{
+    margin:15px;
    @media screen and (min-width:480px){
-    @include flex-basis(30px,1);
+    @include flex-basis(60px,1);
    }
 
     @media screen and (min-width:768px) {
-        @include flex-basis(30px, 2);
+        @include flex-basis(60px, 2);
     }
 
     @media screen and (min-width:1200px) {
-        @include flex-basis(30px, 3);
+        @include flex-basis(60px, 3);
     }
 
     &__link{

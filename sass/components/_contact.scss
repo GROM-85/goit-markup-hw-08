@@ -1,14 +1,9 @@
 .contact {    
-    display: flex;
+    display: flex;    
 
     @media screen and (max-width:767px){
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 32px;
-        margin-bottom: 64px;
-    }
-    
+        display:none;
+    }   
     
         
     @media screen and (min-width: 768px){
@@ -33,6 +28,7 @@
         margin-top: 0;
         margin-bottom: 0;
         align-items: center;
+
         @media screen and (max-width:767px){
             & .contact__link {
             
@@ -41,7 +37,8 @@
             }
         
             &:last-child .contact__link {
-                @include font(500, 34px, $accent-color, 1.14, 0.02em);
+                
+                @include font(500, 5vw ,$accent-color, 1.14, 0.02em);
             }
         }
         

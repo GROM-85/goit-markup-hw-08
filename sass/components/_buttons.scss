@@ -32,33 +32,29 @@
     }
 }
 
-.menu-btn{    
-    z-index: 2;
+.menu-btn{ 
 
-    &__close{
-        display:none;
-    }
+    
+    display:block;
+    color:$primary-text-color;
 
-    &.is-open .menu-btn__close{        
-        display:block;
-        
-    }
-
-    &.is-open .menu-btn__open{
-        display: none;
-    }
+    & .js-open-menu{
+        @media screen and (min-width:768px) {
+                display: none;
+            }
+    }    
 
     &:hover,
     &:focus {
-            color: $accent-color;
-        }
+        color: $accent-color;
+    }
+        
 
     &__icon{
         fill:currentColor;
         @include transition(fill);        
            
-    } 
-    
+    }     
     
     @media screen and (min-width:768px){
         display:none;

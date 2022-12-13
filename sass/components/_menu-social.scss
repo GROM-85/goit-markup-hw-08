@@ -1,18 +1,23 @@
 .menu-social{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start ;
+    flex-wrap: wrap;
    
-    
-    &__item:not(:last-child){
-        border-right:1px solid rgba(33, 33, 33, 0.2);
-        
-    }
-    &__link{
-        padding:0 10px;
-        @include font(500, 18px, $accent-color, 1.2, 0.02em);
+    &__item{
+        padding: 0 10px;
     }
 
+    &__item:not(:last-child){
+        border-right:1px solid rgba(33, 33, 33, 0.2);        
+    }
+
+    &__link{        
+        @include font(500, 18px, $accent-color, 1.2, 0.02em);
+    }
+    &__item:first-child{
+        padding-left:0;
+    }
 
     @media screen and (min-width:768px){
         display:none;

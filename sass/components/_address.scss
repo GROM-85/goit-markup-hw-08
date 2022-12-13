@@ -21,7 +21,11 @@
         margin-top: 20px;
     }
 
-    &__link{
+    &__link{       
+
+        @media screen and (max-width:480px){
+            text-align: center;
+        }
         @include font(400, 14px, $light-grey-text-color, 1.71, 0.03em);
         @include transition(color);
     }

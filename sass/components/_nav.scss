@@ -1,33 +1,21 @@
-.site-nav{
+.site-nav{   
+    display: none; 
 
-    &__list{
-        display: flex;
-
-        @media screen and (max-width:767px){
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 32px;
-            margin-bottom: 300px;
-           
+    @media screen and (min-width:768px) {
+            display: block;
+            
         }
+        
             
-
-        @media screen and (min-width:768px){            
-            
+    &__list{       
+            display:flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap:50px;
-            
-        }
-    }
-    
+            gap: 50px;
+    }   
 
-    &__link{
-
-        @include font(500,40px, $primary-text-color, 1.17, 0.02em);
-        @include transition(color);
+    &__link{        
 
         @media screen and (min-width:768px){
             

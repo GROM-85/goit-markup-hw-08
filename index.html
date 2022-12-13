@@ -24,76 +24,55 @@
         <a href="./index.html" class="logo"
           ><span class="logo__span">Web</span>Studio</a
         >
-        <div class="menu-container" id="menu-container" data-container>
-          <nav class="site-nav">
-            <ul class="site-nav__list">
-              <li class="site-nav__item">
-                <a
-                  href="./index.html"
-                  class="site-nav__link site-nav__link--current"
-                  >Studio</a
-                >
-              </li>
-              <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link">Portfolio</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="#" class="site-nav__link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu__contact">
-            <ul class="contact">
-              <li class="contact__item">
-                <a
-                  href="mailto:info@example.com"
-                  class="contact__link"
-                  aria-label="email"
-                >
-                  <svg class="contact__icon">
-                    <use href="./images/svg/icons.svg#icon-envelope"></use>
-                  </svg>
-                  info@example.com</a
-                >
-              </li>
-              <li class="contact__item">
-                <a
-                  href="tel:+380961111111"
-                  class="contact__link"
-                  aria-label="phone"
-                >
-                  <svg class="contact__icon">
-                    <use href="./images/svg/icons.svg#icon-phone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-            <ul class="menu-social">
-              <li class="menu-social__item">
-                <a class="menu-social__link" href="./">Instagram</a>
-                <span class="menu-social__line"></span>
-              </li>
-              <li class="menu-social__item">
-                <a class="menu-social__link" href="./">Twitter</a>
-                <span class="menu-social__line"></span>
-              </li>
-              <li class="menu-social__item">
-                <a class="menu-social__link" href="./">Facebook</a>
-                <span class="menu-social__line"></span>
-              </li>
-              <li class="menu-social__item">
-                <a class="menu-social__link" href="./">Linkedin</a>
-                <span class="menu-social__line menu-social__line--none"></span>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--current"
+                >Studio</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Portfolio</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact">
+          <li class="contact__item">
+            <a
+              href="mailto:info@example.com"
+              class="contact__link"
+              aria-label="email"
+            >
+              <svg class="contact__icon">
+                <use href="./images/svg/icons.svg#icon-envelope"></use>
+              </svg>
+              info@example.com</a
+            >
+          </li>
+          <li class="contact__item">
+            <a
+              href="tel:+380961111111"
+              class="contact__link"
+              aria-label="phone"
+            >
+              <svg class="contact__icon">
+                <use href="./images/svg/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
         <button
-          class="menu-btn"
+          class="menu-btn js-open-menu"
           data-menu-button
           aria-expanded="false"
-          aria-controls="menu-container"
         >
           <svg
             class="menu-btn__icon"
@@ -101,14 +80,7 @@
             height="40"
             aria-label="mobile menu button"
           >
-            <use
-              class="menu-btn__open js-open-menu"
-              href="./images/svg/icons.svg#menu"
-            ></use>
-            <use
-              class="menu-btn__close js-close-menu"
-              href="./images/svg/icons.svg#close40"
-            ></use>
+            <use href="./images/svg/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
@@ -854,6 +826,68 @@
       </div>
     </div>
 
+    <!-- MOBILE MENU -->
+
+    <div class="menu-container" data-container>
+      <button class="menu-btn js-close-menu">
+        <svg class="menu-close__icon" width="40" height="40">
+          <use            
+            href="./images/svg/icons.svg#close40"
+          ></use>
+        </svg>
+      </button>
+
+      <ul class="menu-nav__list">
+        <li class="menu-nav__item">
+          <a href="./index.html" class="menu-nav__link">Studio</a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="./portfolio.html" class="menu-nav__link">Portfolio</a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="#" class="menu-nav__link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="menu-contact">
+        <li class="menu-contact__item">
+          <a
+            href="mailto:info@example.com"
+            class="menu-contact__link"
+            aria-label="email"
+          >            
+            info@example.com</a
+          >
+        </li>
+        <li class="menu-contact__item">
+          <a
+            href="tel:+380961111111"
+            class="menu-contact__link"
+            aria-label="phone"
+          >            
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      <ul class="menu-social">
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="./">Instagram</a>
+          <span class="menu-social__line"></span>
+        </li>
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="./">Twitter</a>
+          <span class="menu-social__line"></span>
+        </li>
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="./">Facebook</a>
+          <span class="menu-social__line"></span>
+        </li>
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="./">Linkedin</a>
+          <span class="menu-social__line menu-social__line--none"></span>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
