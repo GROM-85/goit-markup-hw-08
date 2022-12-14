@@ -12,8 +12,8 @@
     openMenuBtn.classList.toggle('is-open');
     body.classList.toggle("no-scroll");
 
-    const scrollLockMethod = !isMenuOpened ? 'disableBodyScroll' : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);    
+    // const scrollLockMethod = !isMenuOpened ? 'disableBodyScroll' : 'enableBodyScroll';
+    // bodyScrollLock[scrollLockMethod](document.body);    
 
   };
 
